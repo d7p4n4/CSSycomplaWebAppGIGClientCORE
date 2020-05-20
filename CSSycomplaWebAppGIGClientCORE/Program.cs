@@ -31,6 +31,18 @@ namespace CSSycomplaWebAppGIGClientCORE
                 {
                     fbToken = "dTf4YoJGx6nCudv_LqcJlV:APA91bGwGX5JBtQbYZ6FMkrpJH6veUdmyC_StzNhAuSvUhAKx9DTp5EVlfDlUdl77kv0HTfcxh-L82-1jhiFIgf15HS4ofnZVQr_nvKXjGT3FkRlFxckwBtqqpqSKFPa-D6abZnbpwc7"
                 });
+
+            IsTokenExistResponse isTokenExistResponse =
+                new SycomplaWebAppClient().IsTokenExist(new IsTokenExistRequest()
+                {
+                    fbToken = "dTf4YoJGx6nCudv_LqcJlV:APA91bGwGX5JBtQbYZ6FMkrpJH6veUdmyC_StzNhAuSvUhAKx9DTp5EVlfDlUdl77kv0HTfcxh-L82-1jhiFIgf15HS4ofnZVQr_nvKXjGT3FkRlFxckwBtqqpqSKFPa-D6abZnbpwc7"
+                });
+
+            IsUnknownOrInvalidTokenResponse isUnknownOrInvalidTokenResponse =
+                new SycomplaWebAppClient().IsUnkmnownOrInvalidToken(new IsUnknownOrInvalidTokenRequest()
+                {
+                    fbToken = "dTf4YoJGx6nCudv_LqcJlV:APA91bGwGX5JBtQbYZ6FMkrpJH6veUdmyC_StzNhAuSvUhAKx9DTp5EVlfDlUdl77kv0HTfcxh-L82-1jhiFIgf15HS4ofnZVQr_nvKXjGT3FkRlFxckwBtqqpqSKFPa-D6abZnbpwc7"
+                });
         }
     }
 }
