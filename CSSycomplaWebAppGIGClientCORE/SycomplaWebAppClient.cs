@@ -18,5 +18,13 @@ namespace CSSycomplaWebAppGIGClientCORE
             return JsonConvert.DeserializeObject<GetListOfUsersResponse>(json);
 
         }
+
+        public GetUserFromByTokenResponse GetUserFromByToken(GetUserFromByTokenReqest request)
+        {
+            string json = Ac4yRestServiceClient.POST("/getuserfrombytoken/", "{\n\t\"fbToken\": \"" + request.fbToken + "\"\t\n}");
+
+            return JsonConvert.DeserializeObject<GetUserFromByTokenResponse>(json);
+
+        }
     }
 }
