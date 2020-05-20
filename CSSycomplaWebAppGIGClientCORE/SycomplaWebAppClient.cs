@@ -42,5 +42,13 @@ namespace CSSycomplaWebAppGIGClientCORE
             return JsonConvert.DeserializeObject<IsUnknownOrInvalidTokenResponse>(json);
 
         }
+
+        public LoginRequestResponse LoginRequest(LoginRequestRequest request)
+        {
+            string json = Ac4yRestServiceClient.POST("/loginrequest/", "{\n\t\"fbToken\": \"" + request.fbToken + "\"\t\n}");
+
+            return JsonConvert.DeserializeObject<LoginRequestResponse>(json);
+
+        }
     }
 }

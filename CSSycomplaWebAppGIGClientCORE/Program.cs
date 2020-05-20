@@ -43,6 +43,12 @@ namespace CSSycomplaWebAppGIGClientCORE
                 {
                     fbToken = "dTf4YoJGx6nCudv_LqcJlV:APA91bGwGX5JBtQbYZ6FMkrpJH6veUdmyC_StzNhAuSvUhAKx9DTp5EVlfDlUdl77kv0HTfcxh-L82-1jhiFIgf15HS4ofnZVQr_nvKXjGT3FkRlFxckwBtqqpqSKFPa-D6abZnbpwc7"
                 });
+
+            LoginRequestResponse loginRequestResponse =
+                new SycomplaWebAppClient().LoginRequest(new LoginRequestRequest()
+                {
+                    fbToken = "dTf4YoJGx6nCudv_LqcJlV:APA91bGwGX5JBtQbYZ6FMkrpJH6veUdmyC_StzNhAuSvUhAKx9DTp5EVlfDlUdl77kv0HTfcxh-L82-1jhiFIgf15HS4ofnZVQr_nvKXjGT3FkRlFxckwBtqqpqSKFPa-D6abZnbpwc7"
+                });
         }
     }
 }
